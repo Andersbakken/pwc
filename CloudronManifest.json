@@ -1,0 +1,19 @@
+{
+  "id": "com.anders.pwc",
+  "title": "PWC",
+  "author": "Anders Bakken",
+  "description": "PWC, it stores passwords",
+  "tagline": "Hell yeajh",
+  "version": "0.0.1",
+  "healthCheckPath": "/",
+  "httpPort": 3000,
+  "addons": {
+    "localstorage": {}
+  },
+  "minBoxVersion": "0.0.1",
+  "manifestVersion": 1,
+  "website": "pwc.com",
+  "contactEmail": "agbakken@gmail.com",
+  "icon": "",
+  "mediaLinks": [ ]
+}
