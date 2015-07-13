@@ -1,0 +1,41 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="javascript">
+        </script>
+
+        <% include partials/head %>
+    </head>
+    <body class="container">
+
+        <header>
+            <% include partials/header %>
+        </header>
+
+        <main>
+            <table class="table table-striped">
+                <tr>
+                    <th>Title</th>
+                    <th>Site</th>
+                    <th>Password</th>
+                    <th><button type="button" class="btn btn-success" onclick="addPassword();"">+</button></td>
+                </tr>
+                <% for(var i=0; i<passwords.length; ++i) {%>
+                    <tr>
+                        <td><input class="form-control" value="<%= passwords[i].title %>"</input</td>
+                        <td><input class="form-control" value="<%= passwords[i].site %>"</input></td>
+                        <td><input class="form-control" type="password" value="<%= passwords[i].password %>"</input></td>
+                        <td><button type="button" class="btn btn-danger">X</button></td>
+                    </tr>
+                <% } %>
+            </table>
+        </main>
+
+        <footer>
+            <% include partials/footer %>
+        </footer>
+
+    </body>
+</html>
